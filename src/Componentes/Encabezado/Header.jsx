@@ -11,8 +11,8 @@ export const Header = () => {
 
   return (
     <>
-        <div className="flex m-8">
-            <ul className="flex space-x-4 ml-auto">
+        <div className="flex overflow-auto sm:overflow-visible m-8 p-2">
+            <ul className="flex space-x-4  ml-auto">
                 <li>
                     <Link to="/"
                     className={`group flex items-center space-x-2 p-2 rounded-lg font-medium shadow-[0_4px_8px_rgba(0,0,0,0.2)] transform transition-all duration-300
