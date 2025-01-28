@@ -11,7 +11,7 @@ export const Header = () => {
 
   return (
     <>
-        <div className="flex overflow-auto sm:overflow-visible m-8 p-2">
+        <div className="flex overflow-x-auto sm:overflow-visible my-7 md:m-8 p-2 scrollbar-hide">
             <ul className="flex space-x-4  ml-auto">
                 <li>
                     <Link to="/"

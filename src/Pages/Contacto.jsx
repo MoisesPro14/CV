@@ -38,7 +38,7 @@ export const Contacto = () => {
     return (
         <>
             <form
-                className="flex flex-col items-center justify-center space-y-7 p-6 mt-10 md:mt-36 xl:mt-12 rounded-lg shadow-2xl max-w-md mx-auto transform transition-transform bg-gray-500 border-2 border-zinc-50"
+                className="flex flex-col items-center justify-center space-y-7 p-6 mt-10 md:mt-28 xl:mt-12 rounded-lg shadow-2xl max-w-md mx-auto transform transition-transform bg-gray-500 border-2 border-zinc-50"
                 onSubmit={handleSubmit}>
 
                 <div className="w-full pb-5">
