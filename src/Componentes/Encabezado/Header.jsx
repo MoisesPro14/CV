@@ -53,7 +53,7 @@ export const Header = () => {
                     </Link>
                 </li>
 
-                {/* <li>
+                <li>
                     <Link  to="/proyectos"
                     className={`group flex items-center space-x-2 p-2 rounded-lg font-medium shadow-[0_4px_8px_rgba(0,0,0,0.2)] transform transition-all duration-300
                         ${isActive('/proyectos') ? 'text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80' : 'text-gray-500 bg-white hover:bg-gray-300 hover:scale-105'}`}>
@@ -61,7 +61,7 @@ export const Header = () => {
                         Proyectos
                         
                     </Link>
-                </li> */}
+                </li>
 
                 <li>
                     <Link to="/contacto"

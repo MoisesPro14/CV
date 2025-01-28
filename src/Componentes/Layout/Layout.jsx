@@ -6,7 +6,7 @@ export const Layout = () => {
     <> 
       <div className="overflow-hidden h-screen flex flex-col bg-gradient-to-br from-slate-700 via-slate-950 to-slate-700 animate-gradient-flow">
         <Header />
-        <main className="flex-1 overflow-auto mb-16">
+        <main className="flex-1 overflow-auto ">
             <Outlet />
         </main>    
       </div>

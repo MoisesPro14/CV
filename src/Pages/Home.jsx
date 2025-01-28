@@ -13,7 +13,7 @@ export const Home = () => {
 
     return (
         <>
-            <div className="flex flex-col justify-center items-center mt-10">
+            <div className="flex flex-col justify-center items-center mt-10 md:mt-32 xl:mt-10">
                 <img src={Moises} alt="Moises" className="w-80 h-80 bg-slate-300 rounded-full shadow-2xl  border-4" />
                 <h1 className="mt-4 text-white text-2xl font-bold">Elser Moises</h1>
                 <h2 className="mt-2 text-slate-400 text-xl text-center">Ingeniero De Software Con Inteligencia Artificial</h2>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 export const Contacto = () => {
     const [nombre, setNombre] = useState("");
     const [correo, setCorreo] = useState("");
@@ -24,32 +25,7 @@ export const Contacto = () => {
 
         setEnviando(true); 
 
-        // Desactivamos temporalmente la integración con emailjs
-        /*
-        const serviceId = "service_kw18uuc"; // Reemplaza con tu ID de servicio de EmailJS
-        const templateId = "template_rafv9hl"; // Reemplaza con tu ID de plantilla de EmailJS
-        const publicKey = "BPZlAh-cV1DCiUC9P"; // Reemplaza con tu clave pública de EmailJS
-
-        try {
-            const response = await emailjs.sendForm(
-                serviceId,
-                templateId,
-                e.target, 
-                publicKey
-            );
-
-            if (response.status === 200) {
-                Clear();
-                toast.success("Formulario enviado correctamente");
-            } else {
-                toast.error("Error al enviar el formulario. Intente nuevamente más tarde.");
-            }
-        } catch (error) {
-            console.error("Error al enviar el correo:", error);
-            toast.error("Error al enviar el formulario. Intente nuevamente más tarde.");
-        }
-        */
-        
+    
         // Simulación de éxito (sin emailjs)
         toast.success("Formulario enviado correctamente");
 
@@ -62,7 +38,7 @@ export const Contacto = () => {
     return (
         <>
             <form
-                className="flex flex-col items-center justify-center space-y-7 p-6 mt-12 bg-gray-600 rounded-lg shadow-2xl max-w-md mx-auto transform transition-transform"
+                className="flex flex-col items-center justify-center space-y-7 p-6 mt-10 md:mt-36 xl:mt-12 rounded-lg shadow-2xl max-w-md mx-auto transform transition-transform bg-gray-500 border-2 border-zinc-50"
                 onSubmit={handleSubmit}>
 
                 <div className="w-full pb-5">
@@ -72,7 +48,7 @@ export const Contacto = () => {
                     <input
                         type="text" name="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)}
                         className="mt-1 block w-full px-3 py-2 bg-slate-200 border border-none rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 transition-all transform"
-                        required
+                        required placeholder="Ingrese su nombre completo"
                     />
                 </div>
 
@@ -82,7 +58,7 @@ export const Contacto = () => {
                     </label>
                     <input type="email" name="correo" value={correo} onChange={(e) => setCorreo(e.target.value)}
                         className="mt-1 block w-full px-3 py-2 bg-slate-200 border border-none rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 transition-all transform"
-                        required 
+                        required placeholder="Ingrese su correo electrónico"
                     />
                 </div>
 
@@ -92,7 +68,7 @@ export const Contacto = () => {
                     </label>
                     <textarea name="mensaje" value={mensaje}  onChange={(e) => setMensaje(e.target.value)}
                         className="mt-1 block w-full px-3 py-2 bg-slate-200 border border-none rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 transition-all transform"
-                        required 
+                        required placeholder="Ingrese su mensaje que desea enviar"
                     />
                 </div>
 
@@ -103,15 +79,7 @@ export const Contacto = () => {
                 </button>
             </form>
 
-            <ToastContainer
-                position="top-right"
-                autoClose={5000} 
-                draggable
-                style={{
-                    marginTop: "90px",
-                    marginRight: "20px",
-                    zIndex: 9999,
-                }}
+            <ToastContainer position="top-right" autoClose={5000} draggable  style={{  marginTop: "90px",marginRight: "20px",zIndex: 9999,  }}
             />
         </>
     );
