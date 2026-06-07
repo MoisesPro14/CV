@@ -1,4 +1,4 @@
-import { SiLaravel, SiMysql, SiTailwindcss, SiOracle } from "react-icons/si";
+import { SiLaravel, SiMysql, SiTailwindcss } from "react-icons/si";
 import { FaReact, FaPython, FaGithub } from "react-icons/fa";
 import { DiMsqlServer, DiCss3 } from "react-icons/di";
 import { TbBrandCSharp } from "react-icons/tb";
